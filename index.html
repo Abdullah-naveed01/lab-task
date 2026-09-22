@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Corner</title>
+
+<!-- INTERNAL CSS: used here for a couple of page-specific rules -->
+<style>
+  /* Internal CSS example */
+  .welcome-heading {
+    color: #ff5722;      /* HEX color */
+    font-size: 2.2rem;
+  }
+  /* ID selector */
+  #welcome {
+    background-color: rgb(255, 248, 235); /* RGB color */
+  }
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <h1 class="logo">Food Corner</h1>
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- WELCOME SECTION -->
+  <section id="welcome">
+    <h2 class="welcome-heading">Welcome to Food Corner</h2>
+    <!-- Inline CSS example -->
+    <p style="color:red; font-style:italic;">
+      Fresh, hot and delicious meals made just for you, served with a smile.
+    </p>
+    <button class="btn explore-btn">Explore Menu</button>
+  </section>
+
+  <!-- MENU SECTION -->
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-container">
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="images/pizza.png" alt="Pizza">
+        </div>
+        <div class="card-body">
+          <h3>Pizza</h3>
+          <p>Cheesy, wood-fired pizza loaded with fresh toppings.</p>
+          <div class="card-footer">
+            <span class="price">Rs. 899</span>
+            <button class="btn order-btn">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="images/burger.png" alt="Burger">
+        </div>
+        <div class="card-body">
+          <h3>Burger</h3>
+          <p>Juicy grilled patty with melted cheese and fresh veggies.</p>
+          <div class="card-footer">
+            <span class="price">Rs. 499</span>
+            <button class="btn order-btn">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="images/sandwich.png" alt="Sandwich">
+        </div>
+        <div class="card-body">
+          <h3>Sandwich</h3>
+          <p>Toasted bread stuffed with a hearty, flavorful filling.</p>
+          <div class="card-footer">
+            <span class="price">Rs. 349</span>
+            <button class="btn order-btn">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="images/pasta.png" alt="Pasta">
+        </div>
+        <div class="card-body">
+          <h3>Pasta</h3>
+          <p>Creamy sauce tossed with perfectly cooked pasta.</p>
+          <div class="card-footer">
+            <span class="price">Rs. 649</span>
+            <button class="btn order-btn">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="about-box">
+      <p class="collapse-first">Food Corner has been serving the community with fresh, homemade-style food since day one.</p>
+      <p class="collapse-second">We believe great food brings people together, and every dish is prepared with care and quality ingredients.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <!-- hidden element to demonstrate display:none -->
+    <p class="hidden-note">This promo text is hidden using display:none.</p>
+  </section>
+
+  <!-- OVERFLOW DEMO BOX -->
+  <section>
+    <h2 style="text-align: center;">Overflow Demo</h2>
+    <div class="overflow-box">
+      This box has more text than can fit inside its fixed height, so the overflow
+      property controls how the extra content is handled. Try changing the class
+      value in style.css between visible, hidden and scroll to see each effect
+      while demonstrating this in your lab.
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Food Corner</p>
+  </footer>
+
+</body>
+</html>
